@@ -1,0 +1,289 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Nico: Referência do Arquivo node.h</title>
+<link href="doxygen.css" rel="stylesheet" type="text/css">
+<link href="tabs.css" rel="stylesheet" type="text/css">
+</head><body>
+<!-- Gerado por Doxygen 1.5.5 -->
+<div class="navigation" id="top">
+  <div class="tabs">
+    <ul>
+      <li><a href="index.html"><span>Página&nbsp;Principal</span></a></li>
+      <li><a href="annotated.html"><span>Estruturas&nbsp;de&nbsp;Dados</span></a></li>
+      <li class="current"><a href="files.html"><span>Arquivos</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="contents">
+<h1>Referência do Arquivo node.h</h1><code>#include &lt;stdio.h&gt;</code><br>
+<code>#include &lt;stdlib.h&gt;</code><br>
+<code>#include &lt;stdarg.h&gt;</code><br>
+
+<p>
+<a href="node_8h-source.html">Vá para o código-fonte deste arquivo.</a><table border="0" cellpadding="0" cellspacing="0">
+<tr><td></td></tr>
+<tr><td colspan="2"><br><h2>Estruturas de Dados</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">struct &nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__node.html">_node</a></td></tr>
+
+<tr><td colspan="2"><br><h2>Definições e Macros</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="ad1c68064afbc761adc8309eeaf60d0e"></a><!-- doxytag: member="node.h::code_node" ref="ad1c68064afbc761adc8309eeaf60d0e" args="" -->
+#define&nbsp;</td><td class="memItemRight" valign="bottom"><b>code_node</b>&nbsp;&nbsp;&nbsp;298</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="bef3fafdcc4c22899f54d1f251fb06e5"></a><!-- doxytag: member="node.h::declaracoes_node" ref="bef3fafdcc4c22899f54d1f251fb06e5" args="" -->
+#define&nbsp;</td><td class="memItemRight" valign="bottom"><b>declaracoes_node</b>&nbsp;&nbsp;&nbsp;299</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="e40d2b5da05c70e0cea0702dfc2d3f19"></a><!-- doxytag: member="node.h::declaracao_node" ref="e40d2b5da05c70e0cea0702dfc2d3f19" args="" -->
+#define&nbsp;</td><td class="memItemRight" valign="bottom"><b>declaracao_node</b>&nbsp;&nbsp;&nbsp;300</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="515b0705c16e99bc0c22f77bcfb01de2"></a><!-- doxytag: member="node.h::tipo_node" ref="515b0705c16e99bc0c22f77bcfb01de2" args="" -->
+#define&nbsp;</td><td class="memItemRight" valign="bottom"><b>tipo_node</b>&nbsp;&nbsp;&nbsp;301</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="67e292cf5f04350986fe0675101308cd"></a><!-- doxytag: member="node.h::int_node" ref="67e292cf5f04350986fe0675101308cd" args="" -->
+#define&nbsp;</td><td class="memItemRight" valign="bottom"><b>int_node</b>&nbsp;&nbsp;&nbsp;501</td></tr>
+
+<tr><td colspan="2"><br><h2>Definições de Tipos</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="f78666e6cb576ec864360f78107a356a"></a><!-- doxytag: member="node.h::Node_type" ref="f78666e6cb576ec864360f78107a356a" args="" -->
+typedef int&nbsp;</td><td class="memItemRight" valign="bottom"><b>Node_type</b></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="6390a1d02010dee1843fa2b1263308c1"></a><!-- doxytag: member="node.h::Node" ref="6390a1d02010dee1843fa2b1263308c1" args="" -->
+typedef struct <a class="el" href="struct__node.html">_node</a>&nbsp;</td><td class="memItemRight" valign="bottom"><b>Node</b></td></tr>
+
+<tr><td colspan="2"><br><h2>Funções</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="struct__node.html">Node</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="node_8h.html#e0463b410c4a7dbdbc4d697695726e6c">create_node</a> (int nl, Node_type t, char *lexeme, <a class="el" href="struct__node.html">Node</a> *child0,...)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="node_8h.html#a7faef607e574100e30b08bb3b00fe0d">nb_of_children</a> (<a class="el" href="struct__node.html">Node</a> *n)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="node_8h.html#0ca9f3a4a10bd0cd0e3a79ae8d79676e">is_leaf</a> (<a class="el" href="struct__node.html">Node</a> *n)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="el" href="struct__node.html">Node</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="node_8h.html#e033a5706b5c6d0058874e04c9a7c180">child</a> (<a class="el" href="struct__node.html">Node</a> *n, int i)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="node_8h.html#58649350a2079d8c22fdf5b005a82bf2">deep_free_node</a> (<a class="el" href="struct__node.html">Node</a> *n)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="node_8h.html#4af6752a1b7e972b6b108010956f41b2">height</a> (<a class="el" href="struct__node.html">Node</a> *n)</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="node_8h.html#5a9c3f40eb8b282a40fc2985288596bc">uncompile</a> (FILE *outfile, <a class="el" href="struct__node.html">Node</a> *n)</td></tr>
+
+<tr><td colspan="2"><br><h2>Variáveis</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top"><a class="anchor" name="b2fc451f5607837af74d8097181f6e3e"></a><!-- doxytag: member="node.h::syntax_tree" ref="b2fc451f5607837af74d8097181f6e3e" args="" -->
+<a class="el" href="struct__node.html">Node</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>syntax_tree</b></td></tr>
+
+</table>
+<hr><a name="_details"></a><h2>Descrição Detalhada</h2>
+<dl class="version" compact><dt><b>Versão:</b></dt><dd>1.1 </dd></dl>
+<hr><h2>Funções</h2>
+<a class="anchor" name="e033a5706b5c6d0058874e04c9a7c180"></a><!-- doxytag: member="node.h::child" ref="e033a5706b5c6d0058874e04c9a7c180" args="(Node *n, int i)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct__node.html">Node</a>* child           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct__node.html">Node</a> *&nbsp;</td>
+          <td class="paramname"> <em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>i</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+accessor to the i'th child of a Node. <dl compact><dt><b>Parâmetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>n</em>&nbsp;</td><td>: the node to be consulted. Must abort the program if 'n' is NULL. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>i</em>&nbsp;</td><td>: the number of the child that one wants. Must be lower than the degree of the node and larger than 0. Must abort the program if i is not correct. </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Retorna:</b></dt><dd>a pointer on a Node. </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="e0463b410c4a7dbdbc4d697695726e6c"></a><!-- doxytag: member="node.h::create_node" ref="e0463b410c4a7dbdbc4d697695726e6c" args="(int nl, Node_type t, char *lexeme, Node *child0,...)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct__node.html">Node</a>* create_node           </td>
+          <td>(</td>
+          <td class="paramtype">int&nbsp;</td>
+          <td class="paramname"> <em>nl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Node_type&nbsp;</td>
+          <td class="paramname"> <em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&nbsp;</td>
+          <td class="paramname"> <em>lexeme</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct__node.html">Node</a> *&nbsp;</td>
+          <td class="paramname"> <em>child0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&nbsp;</td>
+          <td class="paramname"> <em>...</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+* Node constructor.<p>
+<dl compact><dt><b>Parâmetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>nl,:</em>&nbsp;</td><td>line number where this token was found in the source code. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>t,:</em>&nbsp;</td><td>node type (one of the values define'd above). Must abort the program if the type is not correct. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>lexeme,:</em>&nbsp;</td><td>whatever string you want associated to this node. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>attr,:</em>&nbsp;</td><td>a semantical attribute. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>child0,:</em>&nbsp;</td><td>first of a list of pointers to children Node*'s. See the extra file 'exemplo_func_var_arg.c' for an example. To create a leaf, use NULL as last argument to <a class="el" href="node_8h.html#e0463b410c4a7dbdbc4d697695726e6c">create_node()</a>. </td></tr>
+  </table>
+</dl>
+<dl class="return" compact><dt><b>Retorna:</b></dt><dd>a pointer to a new Node. </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="58649350a2079d8c22fdf5b005a82bf2"></a><!-- doxytag: member="node.h::deep_free_node" ref="58649350a2079d8c22fdf5b005a82bf2" args="(Node *n)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int deep_free_node           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct__node.html">Node</a> *&nbsp;</td>
+          <td class="paramname"> <em>n</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Destructor of a Node. Desallocates (recursively) all the tree rooted at 'n'. 
+</div>
+</div><p>
+<a class="anchor" name="4af6752a1b7e972b6b108010956f41b2"></a><!-- doxytag: member="node.h::height" ref="4af6752a1b7e972b6b108010956f41b2" args="(Node *n)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int height           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct__node.html">Node</a> *&nbsp;</td>
+          <td class="paramname"> <em>n</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+returns the height of the tree rooted by 'n'. The height of a leaf is 1. 
+</div>
+</div><p>
+<a class="anchor" name="0ca9f3a4a10bd0cd0e3a79ae8d79676e"></a><!-- doxytag: member="node.h::is_leaf" ref="0ca9f3a4a10bd0cd0e3a79ae8d79676e" args="(Node *n)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int is_leaf           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct__node.html">Node</a> *&nbsp;</td>
+          <td class="paramname"> <em>n</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Tests if a Node is a leaf. Must abort the program if 'n' is NULL. <dl class="return" compact><dt><b>Retorna:</b></dt><dd>1 if n is a leaf, 0 else. </dd></dl>
+
+</div>
+</div><p>
+<a class="anchor" name="a7faef607e574100e30b08bb3b00fe0d"></a><!-- doxytag: member="node.h::nb_of_children" ref="a7faef607e574100e30b08bb3b00fe0d" args="(Node *n)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nb_of_children           </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct__node.html">Node</a> *&nbsp;</td>
+          <td class="paramname"> <em>n</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+accessor to the number of children of a Node. Must abort the program if 'n' is NULL. 
+</div>
+</div><p>
+<a class="anchor" name="5a9c3f40eb8b282a40fc2985288596bc"></a><!-- doxytag: member="node.h::uncompile" ref="5a9c3f40eb8b282a40fc2985288596bc" args="(FILE *outfile, Node *n)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void uncompile           </td>
+          <td>(</td>
+          <td class="paramtype">FILE *&nbsp;</td>
+          <td class="paramname"> <em>outfile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct__node.html">Node</a> *&nbsp;</td>
+          <td class="paramname"> <em>n</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td width="100%"></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Prints into a file the lexemes contained in the node rooted by 'n'. The impression must follow a depth-first order. <dl compact><dt><b>Parâmetros:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>outfile</em>&nbsp;</td><td>: the file to which the lexemes are printed. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>n</em>&nbsp;</td><td>: the root node of the tree. Must abort the program if 'n' is NULL. </td></tr>
+  </table>
+</dl>
+
+</div>
+</div><p>
+</div>
+<hr size="1"><address style="text-align: right;"><small>Gerado em Fri Sep 2 17:47:25 2011 para Nico por&nbsp;
+<a href="http://www.doxygen.org/index.html">
+<img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.5 </small></address>
+</body>
+</html>

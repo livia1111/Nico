@@ -1,0 +1,158 @@
+\hypertarget{node_8h}{
+\section{Referência do Arquivo node.h}
+\label{node_8h}\index{node.h@{node.h}}
+}
+{\tt \#include $<$stdio.h$>$}\par
+{\tt \#include $<$stdlib.h$>$}\par
+{\tt \#include $<$stdarg.h$>$}\par
+\subsection*{Estruturas de Dados}
+\begin{CompactItemize}
+\item 
+struct \hyperlink{struct__node}{\_\-node}
+\end{CompactItemize}
+\subsection*{Definições e Macros}
+\begin{CompactItemize}
+\item 
+\hypertarget{node_8h_ad1c68064afbc761adc8309eeaf60d0e}{
+\#define \textbf{code\_\-node}~298}
+\label{node_8h_ad1c68064afbc761adc8309eeaf60d0e}
+
+\item 
+\hypertarget{node_8h_bef3fafdcc4c22899f54d1f251fb06e5}{
+\#define \textbf{declaracoes\_\-node}~299}
+\label{node_8h_bef3fafdcc4c22899f54d1f251fb06e5}
+
+\item 
+\hypertarget{node_8h_e40d2b5da05c70e0cea0702dfc2d3f19}{
+\#define \textbf{declaracao\_\-node}~300}
+\label{node_8h_e40d2b5da05c70e0cea0702dfc2d3f19}
+
+\item 
+\hypertarget{node_8h_515b0705c16e99bc0c22f77bcfb01de2}{
+\#define \textbf{tipo\_\-node}~301}
+\label{node_8h_515b0705c16e99bc0c22f77bcfb01de2}
+
+\item 
+\hypertarget{node_8h_67e292cf5f04350986fe0675101308cd}{
+\#define \textbf{int\_\-node}~501}
+\label{node_8h_67e292cf5f04350986fe0675101308cd}
+
+\end{CompactItemize}
+\subsection*{Definições de Tipos}
+\begin{CompactItemize}
+\item 
+\hypertarget{node_8h_f78666e6cb576ec864360f78107a356a}{
+typedef int \textbf{Node\_\-type}}
+\label{node_8h_f78666e6cb576ec864360f78107a356a}
+
+\item 
+\hypertarget{node_8h_6390a1d02010dee1843fa2b1263308c1}{
+typedef struct \hyperlink{struct__node}{\_\-node} \textbf{Node}}
+\label{node_8h_6390a1d02010dee1843fa2b1263308c1}
+
+\end{CompactItemize}
+\subsection*{Funções}
+\begin{CompactItemize}
+\item 
+\hyperlink{struct__node}{Node} $\ast$ \hyperlink{node_8h_e0463b410c4a7dbdbc4d697695726e6c}{create\_\-node} (int nl, Node\_\-type t, char $\ast$lexeme, \hyperlink{struct__node}{Node} $\ast$child0,...)
+\item 
+int \hyperlink{node_8h_a7faef607e574100e30b08bb3b00fe0d}{nb\_\-of\_\-children} (\hyperlink{struct__node}{Node} $\ast$n)
+\item 
+int \hyperlink{node_8h_0ca9f3a4a10bd0cd0e3a79ae8d79676e}{is\_\-leaf} (\hyperlink{struct__node}{Node} $\ast$n)
+\item 
+\hyperlink{struct__node}{Node} $\ast$ \hyperlink{node_8h_e033a5706b5c6d0058874e04c9a7c180}{child} (\hyperlink{struct__node}{Node} $\ast$n, int i)
+\item 
+int \hyperlink{node_8h_58649350a2079d8c22fdf5b005a82bf2}{deep\_\-free\_\-node} (\hyperlink{struct__node}{Node} $\ast$n)
+\item 
+int \hyperlink{node_8h_4af6752a1b7e972b6b108010956f41b2}{height} (\hyperlink{struct__node}{Node} $\ast$n)
+\item 
+void \hyperlink{node_8h_5a9c3f40eb8b282a40fc2985288596bc}{uncompile} (FILE $\ast$outfile, \hyperlink{struct__node}{Node} $\ast$n)
+\end{CompactItemize}
+\subsection*{Variáveis}
+\begin{CompactItemize}
+\item 
+\hypertarget{node_8h_b2fc451f5607837af74d8097181f6e3e}{
+\hyperlink{struct__node}{Node} $\ast$ \textbf{syntax\_\-tree}}
+\label{node_8h_b2fc451f5607837af74d8097181f6e3e}
+
+\end{CompactItemize}
+
+
+\subsection{Descrição Detalhada}
+\begin{Desc}
+\item[Versão:]1.1 \end{Desc}
+
+
+\subsection{Funções}
+\hypertarget{node_8h_e033a5706b5c6d0058874e04c9a7c180}{
+\index{node.h@{node.h}!child@{child}}
+\index{child@{child}!node.h@{node.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Node}$\ast$ child ({\bf Node} $\ast$ {\em n}, \/  int {\em i})}}
+\label{node_8h_e033a5706b5c6d0058874e04c9a7c180}
+
+
+accessor to the i'th child of a Node. \begin{Desc}
+\item[Parâmetros:]
+\begin{description}
+\item[{\em n}]: the node to be consulted. Must abort the program if 'n' is NULL. \item[{\em i}]: the number of the child that one wants. Must be lower than the degree of the node and larger than 0. Must abort the program if i is not correct. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Retorna:]a pointer on a Node. \end{Desc}
+\hypertarget{node_8h_e0463b410c4a7dbdbc4d697695726e6c}{
+\index{node.h@{node.h}!create\_\-node@{create\_\-node}}
+\index{create\_\-node@{create\_\-node}!node.h@{node.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}{\bf Node}$\ast$ create\_\-node (int {\em nl}, \/  Node\_\-type {\em t}, \/  char $\ast$ {\em lexeme}, \/  {\bf Node} $\ast$ {\em child0}, \/   {\em ...})}}
+\label{node_8h_e0463b410c4a7dbdbc4d697695726e6c}
+
+
+$\ast$ Node constructor.
+
+\begin{Desc}
+\item[Parâmetros:]
+\begin{description}
+\item[{\em nl,:}]line number where this token was found in the source code. \item[{\em t,:}]node type (one of the values define'd above). Must abort the program if the type is not correct. \item[{\em lexeme,:}]whatever string you want associated to this node. \item[{\em attr,:}]a semantical attribute. \item[{\em child0,:}]first of a list of pointers to children Node$\ast$'s. See the extra file 'exemplo\_\-func\_\-var\_\-arg.c' for an example. To create a leaf, use NULL as last argument to \hyperlink{node_8h_e0463b410c4a7dbdbc4d697695726e6c}{create\_\-node()}. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Retorna:]a pointer to a new Node. \end{Desc}
+\hypertarget{node_8h_58649350a2079d8c22fdf5b005a82bf2}{
+\index{node.h@{node.h}!deep\_\-free\_\-node@{deep\_\-free\_\-node}}
+\index{deep\_\-free\_\-node@{deep\_\-free\_\-node}!node.h@{node.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int deep\_\-free\_\-node ({\bf Node} $\ast$ {\em n})}}
+\label{node_8h_58649350a2079d8c22fdf5b005a82bf2}
+
+
+Destructor of a Node. Desallocates (recursively) all the tree rooted at 'n'. \hypertarget{node_8h_4af6752a1b7e972b6b108010956f41b2}{
+\index{node.h@{node.h}!height@{height}}
+\index{height@{height}!node.h@{node.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int height ({\bf Node} $\ast$ {\em n})}}
+\label{node_8h_4af6752a1b7e972b6b108010956f41b2}
+
+
+returns the height of the tree rooted by 'n'. The height of a leaf is 1. \hypertarget{node_8h_0ca9f3a4a10bd0cd0e3a79ae8d79676e}{
+\index{node.h@{node.h}!is\_\-leaf@{is\_\-leaf}}
+\index{is\_\-leaf@{is\_\-leaf}!node.h@{node.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int is\_\-leaf ({\bf Node} $\ast$ {\em n})}}
+\label{node_8h_0ca9f3a4a10bd0cd0e3a79ae8d79676e}
+
+
+Tests if a Node is a leaf. Must abort the program if 'n' is NULL. \begin{Desc}
+\item[Retorna:]1 if n is a leaf, 0 else. \end{Desc}
+\hypertarget{node_8h_a7faef607e574100e30b08bb3b00fe0d}{
+\index{node.h@{node.h}!nb\_\-of\_\-children@{nb\_\-of\_\-children}}
+\index{nb\_\-of\_\-children@{nb\_\-of\_\-children}!node.h@{node.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}int nb\_\-of\_\-children ({\bf Node} $\ast$ {\em n})}}
+\label{node_8h_a7faef607e574100e30b08bb3b00fe0d}
+
+
+accessor to the number of children of a Node. Must abort the program if 'n' is NULL. \hypertarget{node_8h_5a9c3f40eb8b282a40fc2985288596bc}{
+\index{node.h@{node.h}!uncompile@{uncompile}}
+\index{uncompile@{uncompile}!node.h@{node.h}}
+\subsubsection{\setlength{\rightskip}{0pt plus 5cm}void uncompile (FILE $\ast$ {\em outfile}, \/  {\bf Node} $\ast$ {\em n})}}
+\label{node_8h_5a9c3f40eb8b282a40fc2985288596bc}
+
+
+Prints into a file the lexemes contained in the node rooted by 'n'. The impression must follow a depth-first order. \begin{Desc}
+\item[Parâmetros:]
+\begin{description}
+\item[{\em outfile}]: the file to which the lexemes are printed. \item[{\em n}]: the root node of the tree. Must abort the program if 'n' is NULL. \end{description}
+\end{Desc}
